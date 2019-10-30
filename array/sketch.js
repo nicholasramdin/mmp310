@@ -1,5 +1,6 @@
 var sizes = [100, 80, 120, 90, 100, 110];
 var position = [0, 10, -10, 20, -20, 0];
+var speed = [0.5, 0.2, 0.5, 0.1, 1.5, 0.6]
 
 
 function setup() {
@@ -12,7 +13,7 @@ function draw() {
 	for (let i = 0; i < sizes.length; i++) {
 		spaceCadet(50 + i * 100, 100, sizes[i]);
         
-        position[i] += sizes[i];
+        sizes[i] += speed[i];
         
         
 	}
